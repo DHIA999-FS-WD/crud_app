@@ -8,7 +8,13 @@ const app = express();
 const port = process.env.PORT;
 const userRoutes = require("./routes/UserRoutes");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [""],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use("/", userRoutes);
 app.listen(port, (err) => {
