@@ -16,7 +16,7 @@ function Users() {
   }, []);
   const handleDelete = (id) => {
     axios
-      .delete("https://crud-app-api-one.vercel.app/deleteUser/" + id)
+      .delete(`https://crud-app-api-one.vercel.app/deleteUser/${id}`)
       .then((result) => {
         console.log(result);
         window.location.reload();

@@ -22,7 +22,11 @@ function UpdateUser() {
   const Update = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:3001/updateUser/" + id, { name, email, age })
+      .put("https://crud-app-api-one.vercel.app/updateUser/" + id, {
+        name,
+        email,
+        age,
+      })
       .then((result) => {
         console.log(result);
         navigate("/");
