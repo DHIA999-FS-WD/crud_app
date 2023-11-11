@@ -5,12 +5,12 @@ connectDB();
 const express = require("express");
 const app = express();
 
-const port = process.env.PORT;
+const port = 3001;
 const userRoutes = require("./routes/UserRoutes");
 
 app.use(
   cors({
-    origin: [""],
+    origin: ["https://crud-app-frontend-six.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
