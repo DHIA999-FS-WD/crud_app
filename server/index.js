@@ -11,7 +11,7 @@ const userRoutes = require("./routes/UserRoutes");
 app.use(
   cors({
     origin: ["https://crud-app-frontend-six.vercel.app"],
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
 );
