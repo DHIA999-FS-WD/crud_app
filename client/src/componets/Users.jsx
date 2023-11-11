@@ -6,7 +6,7 @@ function Users() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     axios
-      .get(" http://localhost:3001/getUsers")
+      .get(" https://crud-app-api-one.vercel.app/getUsers")
       .then((result) => {
         setUsers(result.data);
       })
