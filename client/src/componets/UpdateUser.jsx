@@ -9,7 +9,7 @@ function UpdateUser() {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("https://crud-app-api-one.vercel.app//getUser/" + id)
+      .get("https://crud-app-api-one.vercel.app/getUser/" + id)
       .then((result) => {
         setName(result.data.name);
         setEmail(result.data.email);
